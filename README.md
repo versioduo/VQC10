@@ -16,6 +16,8 @@ The unit has a 2.5mm pin spacing it fits into a breadboard just fine with some
 
 ## Links
 
+[YouTube](https://www.youtube.com/watch?v=0lq7MsXVEDU)
+
 [Datasheet](http://www.industrialalchemy.org/pdf2/vqc10.pdf)
 
 [Pictures](http://www.industrialalchemy.org/articleview.php?item=1037)
