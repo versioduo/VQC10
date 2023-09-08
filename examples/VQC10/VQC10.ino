@@ -1,4 +1,3 @@
-#include <Adafruit_TinyUSB.h>
 #include <VQC10.h>
 
 static VQC10<> LED({
