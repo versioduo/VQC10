@@ -1,9 +1,9 @@
 #include <VQC10.h>
 
 static VQC10<> LED({
-  .digits{A0, A1, A2, A3},
-  .columns{A4, A5, 23, 2, 3},
-  .rows{5, 7, 9, 10, 11, 12, 13},
+  {A0, A1, A2, A3},          // Digits
+  {A4, A5, 23, 2, 3},        // Columns
+  {5, 7, 9, 10, 11, 12, 13}, // Rows
 });
 
 // https://de.wikipedia.org/wiki/Politisches_System_der_DDR
@@ -32,7 +32,7 @@ void loop() {
   static unsigned long usec{};
   static uint16_t count{};
 
-  if ((unsigned long)(micros() - usec) > 150 * 1000) {
+  if ((unsigned long)(micros() - usec) > 150UL * 1000) {
     usec = micros();
 
     LED.show(0, text[count + 0]);
